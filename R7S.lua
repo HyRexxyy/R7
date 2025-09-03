@@ -10,16 +10,16 @@ local HttpService = game:GetService("HttpService")
 local TeleportService = game:GetService("TeleportService")
 
 local Window = Rayfield:CreateWindow({
-   Name = "Rayfield Example Window
-   LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
-   ShowText = "Rayfield",
+   Name = "Fish It",
+   LoadingTitle = "Fish It Script",
+   LoadingSubtitle = "by HyRexxyy",
+   ShowText = "R's Menu",
    Theme = "Default",
    ToggleUIKeybind = "K",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = nil,
-      FileName = "Big Hub"
+      FolderName = R7Script,
+      FileName = "R7S"
    KeySystem = false,
    }
 })
