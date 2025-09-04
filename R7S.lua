@@ -23,3 +23,36 @@ local Window = Rayfield:CreateWindow({
    KeySystem = false,
    }
 })
+
+local MainTab = Window:CreateTab("Auto Fish", "fish")
+local PlayerTab = Window:CreateTab("Player", "users-round")
+local IslandsTab = Window:CreateTab("Islands", "map")
+local EventTab = Window:CreateTab("Event", "cog")
+local Spawn_Boat = Window:CreateTab("Spawn Boat", "cog")
+local Buy_Weather = Window:CreateTab("Buy Weather", "cog")
+
+local AutoSell = false
+local autofish = false
+local perfectCast = false
+local ijump = false
+local autoRecastDelay = 0.5
+local enchantPos = Vector3.new(3231, -1303, 1402)
+
+local featureState = {
+    AutoSell = false,
+}
+
+local function NotifySuccess(title, message)
+	Rayfield:Notify({ Title = title, Content = message, Duration = 3, Image = "circle-check" })
+end
+
+local function NotifyError(title, message)
+	Rayfield:Notify({ Title = title, Content = message, Duration = 3, Image = "ban" })
+end
+
+MainTab:CreateParagraph({
+    Title = "🎣 Auto Fish Settings",
+    Content = "Gunakan toggle & slider di bawah untuk mengatur auto fishing."
+})
+end
+
